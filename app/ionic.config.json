@@ -1,0 +1,7 @@
+{
+  "name": "ionic-based-enterprise",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

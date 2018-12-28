@@ -1,0 +1,13 @@
+[
+  {
+    "request": {
+      "url": "^/home$",
+      "method": "GET"
+    },
+    "response": {
+      "status": 500,
+      "latency": 2000,
+      "file": "home/200.json"
+    }  
+  }
+]

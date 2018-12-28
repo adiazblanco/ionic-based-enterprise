@@ -1,0 +1,14 @@
+{
+  "name": "rest-mocks",
+  "version": "1.0.0",
+  "description": "mobile-project-mocks",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "stubby -l localhost -s 8888 -d ./endpoints.json -w -q &",
+    "stop": "kill $(lsof -t -i :8888)"
+  },
+  "author": "Alexander Diaz",
+  "dependencies": {
+    "stubby": "4.0.0"
+  }
+}

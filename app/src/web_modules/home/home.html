@@ -1,0 +1,23 @@
+<ion-header (click)="interactor.changeContent()">
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="homeInfo | async; let homeInfo; else loadingOrError">
+    {{ homeInfo?.title }}
+    <p [innerHTML]="homeInfo?.content"></p>
+  </div>
+  <ng-template #loadingOrError>
+    <ng-container *ngIf="interactor.errorHandled; else loading">
+      {{ interactor.errorHandled }}
+    </ng-container>
+
+    <ng-template #loading>
+      Loading ...
+    </ng-template>
+  </ng-template>
+</ion-content>
